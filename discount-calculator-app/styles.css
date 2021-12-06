@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #184d47;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+}
+h1 {
+  padding-top: 1rem;
+}
+.container {
+  background-color: white;
+  text-align: center;
+  height: 100%;
+  border-radius: 8px;
+  min-width: 500px;
+}
+.container__bill-amount,
+.container__discount-percent,
+.container__discount-amount,
+.container__pay-final {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.discount__calc-btns {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.reset {
+  margin: 2rem 1rem;
+  background-color: lightgreen;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+.calculate {
+  background-color: skyblue;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  margin: 0 1rem;
+}
+.calculate:hover {
+  background-color: #006ee6;
+}
+.reset:hover {
+  background-color: #86dc3d;
+}

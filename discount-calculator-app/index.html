@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Discount Calculator</title>
+  </head>
+  <body>
+    <form >
+    <div class="container">
+      <h1>Discount Calculator</h1>
+      <div class="container__bill-amount">
+      <label>Enter bill amount:</label>
+      <input name="bill" id="bill" type="text"></input>
+      </div>
+      <div class="container__discount-percent">
+      <label>Select discount:</label>
+      <select name="discount-percentage" id="discount-percentage">
+        <option>0</option>
+      <option value="5">5%</option>
+      <option value="10">10%</option>
+      <option value="15">15%</option>
+      <option value="20">20%</option>
+      <option value="25">25%</option>
+      <option value="30">30%</option>
+      </select>
+      </div>
+      <div class="container__discount-amount">
+      <label>Discount amount:</label>
+      <input name="discount" id="discount-amount" type="text" disabled></input> 
+      </div>
+      <div class="container__pay-final">
+       <label>Final Pay:</label>
+      <input name="pay" id="pay" type="text" disabled></input>
+      </div>
+    
+      <div class="discount__calc-btns">
+      <button class="btn calculate" type="submit" >Calculate</button>
+      <button class="btn reset" type="submit">Reset</button>
+      </div>
+        </div>
+      </form>
+      <script src="app.js"></script>
+  </body>
+</html>
